@@ -1,0 +1,11 @@
+#Creating Service Account
+#first create name space kubectl create namespace webapps
+#come out from Terra folder and create this file vi svc.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: jenkins
+  namespace: webapps
+
+#To run the svc.yml : kubectl apply -f svc.yaml
+
